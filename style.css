@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+.nav{
+    font-family: 'Belanosima', sans-serif;
+    background-color:  #FC7300;
+    position: sticky;
+    
+    
+}
+ul{
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   flex-direction: row;
+   list-style: none;
+   margin: 0;
+   padding: 1em;
+   height: 2em;
+
+}
+li{
+    
+    text-decoration: none;
+    align-items: center;
+    font-size: 1em;
+
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
