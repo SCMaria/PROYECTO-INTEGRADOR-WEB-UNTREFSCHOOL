@@ -1,33 +1,106 @@
-body{
-    margin: 0;
-}
-.nav{
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+.navbar-brand{
     font-family: 'Belanosima', sans-serif;
-    background-color:  #FC7300;
-    position: sticky;
-    
+    color:  #00425A;
     
 }
-ul{
-   display: flex;
-   justify-content: space-around;
-   align-items: flex-start;
-   flex-direction: row;
-   list-style: none;
-   margin: 0;
-   padding: 1em;
-   height: 2em;
+
+.bg-body-tertiary{
+    background-color:#FC7300 !important ;
+    font-family: 'Poppins', sans-serif;
+    color: #00425A !important;
+   
+}
+li,a{
+    color: #00425A !important;
+}
+
+
+body{
+    background-color: #EFF5F5 ;
+}
+.title{
+    display: flex;
+    flex-direction:column ;
+    background-image: url(imagenes/school-front.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 10em;
+    opacity: 0.3;
+  
+}
+.title h1{
+    text-align: center;
+    color: #FC7300 ;
 
 }
-li{
+.section1{
+    width: 100%;
+}
+.content-img{
+    width: 100%;
+    text-align: center;
+}
+.content-img img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
     
-    text-decoration: none;
-    align-items: center;
+.content1,h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+p{
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
     font-size: 1em;
-
+}
+.content-img2 img{
+    width: 10em;
+    height: 10em;
+    width: 100%;
+    text-align: center;
+}
+.section3{
+    display: grid;
+    justify-items: center;
+    text-align: center;
 }
 
-a{
-    text-decoration: none;
-    color: black
+.section3 div{
+    border: 2em solid #FC7300 ;
+    font-family: 'Belanosima', sans-serif;
+    color:#00425A;
+    
 }
+.nota{
+    border: 2px solid #00425A;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f8a70;
+    font-size: 1em;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+footer section{
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 10px;
+}
+
+
+   
