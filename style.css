@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:ital,wght@0,400;1,300&display=swap');
-
+nav{
+    position: sticky;
+}
 .navbar-brand{
     font-family: 'Belanosima', sans-serif;
     color:  #00425A;
     
 }
+
 
 .bg-body-tertiary{
     background-color:#FC7300 !important ;
@@ -34,6 +37,8 @@ body{
 .title h1{
     text-align: center;
     color: #FC7300 ;
+    position: relative;
+
 
 }
 .section1{
@@ -78,9 +83,10 @@ p{
 }
 
 .section3 div{
-    border: 2em solid #FC7300 ;
+    border: 3em solid #FC7300 ;
     font-family: 'Belanosima', sans-serif;
     color:#00425A;
+    padding: 2em;
     
 }
 .nota{
