@@ -1,32 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="PROYECTO-INTEGRADOR-WEB-UNTREFSCHOOL">
     <meta name="author" content="Sanchez Maria Cielo">
     <title>Contacto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styleform.css">
-</head>
-<body>
-    <form action="https://formsubmit.co/sanchezmaria306@gmail.com"  class="container" method="post" autocomplete="on" enctype="multipart/form-data"   >
-        <h2>contacto</h2>
-        <div class="input">
-            <label for="name">Nombre</label>
-            <input type="text" name="nombre" id="name" placeholder="Nombre" >
-
-            <label for="phone">Teléfono</label>
-            <input type="tel" name="telefono" id="phone" placeholder="teléfono">
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="email">
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="escriba aqui su mensaje"></textarea>
-            <input  class="input-group"  type="submit" value="enviar">
-
-        </div>
+  </head>
+  <body> <div class="container">
+    <h1>Contacto</h1>
+    <form action="https://formsubmit.co/sanchezmaria306@gmail.com" method="post">
+      <input type="hidden" name="url" value="127.0.0.1:5500" />
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="texto" class="form-control" name="nombre" id="nombre" placeholder="nombre"/>
+      </div>
+       <div class="mb-3">
+        <label for="tel" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" name="tel" id="tel" placeholder="telefono" />
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" name="correo" id="correo" placeholder="ingrese email" />
+      </div>
+      <div class="mb-3">
+        <label for="consulta" class="form-label">Consulta</label>
+        <textarea
+          class="form-control"
+          id="consulta"
+          name="consulta"
+          rows="3"
+          placeholder="escriba aqui su consulta"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-    <footer></footer>
-</body>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>

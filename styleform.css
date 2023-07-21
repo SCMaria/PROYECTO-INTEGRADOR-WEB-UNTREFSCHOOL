@@ -1,39 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:ital,wght@0,400;1,300&display=swap');
 
-footer{
-    color: #00425A;
-    font-family: 'Poppins', sans-serif;
-    background-color: #EFF5F5;
-    border: 2px solid #FC7300;
-    color: #1F8A70;
-    color:#181823;
-    font-family: 'Belanosima', sans-serif;
 
-
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.form{
-    width: 400px;
+.container{
     background-color: #FC7300;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     color: #181823;
-
 }
 
-input,textarea{
-    display: flex;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
+.btn-primary {
+    background-color:#1f8a70;
 }
+
+
 
     
