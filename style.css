@@ -138,5 +138,51 @@ footer{
 .section4{
     background-color: #1f8a70;
 }
+ @media screen and (min-width: 768px) {
+    .section3{
+        display: flex;
+        background-color: #FC7300;
+        flex-wrap: wrap;
+    }
+ }
 
+ @media screen and (min-width: 1024px) {
+    .section3{
+        display: flex;
+        background-color: #FC7300;
+        flex-wrap: nowrap;
+    }
+ }
+ @media (min-width: 768px){
+    footer{
+        display: flex;
+    }
+
+ }
+ @media (min-width: 768px){
+    .section4{
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+
+ }
+ @media (min-width: 768px){
+    .title{
+        font-size: 15px;
+    }
+
+ @media screen and (min-width: 800px){
+    .section{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 30px;
+    }
+    .content-img img{
+        float: left;
+        width: 300px;
+        height: 300px;
+    }
+   
    
