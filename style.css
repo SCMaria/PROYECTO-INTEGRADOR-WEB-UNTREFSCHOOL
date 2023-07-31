@@ -44,6 +44,8 @@ body{
 .section1{
     width: 100%;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .content-img{
     width: 100%;
@@ -58,25 +60,32 @@ body{
 .content1,h2 {
     width: 100%;
     text-align: center;
-    margin-top: 40px;
     font-weight: 100%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 
 }
 p{
-    margin-top: 1em;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     letter-spacing: 1px;
     font-size: 1em;
 }
-.content-img2 img{
-    width: 10em;
-    height: 10em;
-    width: 100%;
-    text-align: center;
+.section2{
+    display: flex;
+    flex-direction: column;
 }
+.content-img2 img{
+    border-radius: 50%;
+    height: 10em;
+    text-align: center;
+    width: 10em;
+}
+.content-img2{
+    display: flex;
+    justify-content: center;
+}
+
 .section3{
     background-color: #FC7300;
     display: grid;
@@ -123,13 +132,7 @@ footer{
 .contacto a{
     text-decoration: none;
 }
-.content2{
-    padding: 30px;
-}
 
-.info{
-    padding: 30px;
-}
 .mapa{
     display: flex;
     flex-direction: column;
@@ -138,51 +141,69 @@ footer{
 .section4{
     background-color: #1f8a70;
 }
+
+.text-alineados{
+    padding: 30px;
+}
  @media screen and (min-width: 768px) {
     .section3{
         display: flex;
         background-color: #FC7300;
         flex-wrap: wrap;
     }
- }
-
- @media screen and (min-width: 1024px) {
-    .section3{
-        display: flex;
-        background-color: #FC7300;
-        flex-wrap: nowrap;
-    }
- }
- @media (min-width: 768px){
     footer{
         display: flex;
+        text-align: center;
+        justify-content: space-around;
     }
-
- }
- @media (min-width: 768px){
     .section4{
         display: flex;
         flex-wrap: nowrap;
         font-size: 20px;
         letter-spacing: normal;
     }
-
- }
- @media (min-width: 768px){
     .title{
         font-size: 15px;
     }
-
- @media screen and (min-width: 800px){
     .section{
         display: flex;
         flex-direction: row-reverse;
-        padding: 30px;
     }
     .content-img img{
-        float: left;
         width: 300px;
         height: 300px;
     }
-   
-   
+    .content-img2 img{
+        float: right;
+        width: 300px;
+        height: 300px;
+       
+     }
+ }
+
+@media screen and (min-width: 1024px) {
+    .section1{
+        flex-direction: row;
+    }
+    .section2{
+        flex-direction: row-reverse;
+    }
+    .section3{
+        display: flex;
+        background-color: #FC7300;
+        flex-wrap: nowrap;
+    }
+    .text-alineados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    flex: 60%;
+    }
+    .content-img, .content-img2{
+        flex: 40%;
+        padding: 20px;
+    }
+ }
+
+
